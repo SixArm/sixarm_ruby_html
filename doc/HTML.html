@@ -1,332 +1,737 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <head>
+    <meta name="Content-Type" content="text/html; charset=utf-8" />
+<title>Module: HTML</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
-	<title>Module: HTML</title>
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
 
-	<link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (H)</a> &raquo; 
+    
+    
+    <span class="title">HTML</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
 
-	<script src="./js/jquery.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/thickbox-compressed.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/quicksearch.js" type="text/javascript"
-		charset="utf-8"></script>
-	<script src="./js/darkfish.js" type="text/javascript"
-		charset="utf-8"></script>
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
 
-</head>
-<body class="module">
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: HTML
+  
+  
+  
+</h1>
 
-	<div id="metadata">
-		<div id="file-metadata">
-			<div id="file-list-section" class="section">
-				<h3 class="section-header">In Files</h3>
-				<div class="section-body">
-					<ul>
-					
-						<li><a href="./lib/sixarm_ruby_html_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
-							class="thickbox" title="lib/sixarm_ruby_html.rb">lib/sixarm_ruby_html.rb</a></li>
-					
-					</ul>
-				</div>
-			</div>
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/sixarm_ruby_html/misc.rb<span class="defines">,<br />
+  lib/sixarm_ruby_html/lists.rb,<br /> lib/sixarm_ruby_html/tables.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
 
-			
-		</div>
 
-		<div id="class-metadata">
 
-			<!-- Parent Class -->
-			
 
-			<!-- Namespace Contents -->
-			
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
 
-			<!-- Method Quickref -->
-			
-			<div id="method-list-section" class="section">
-				<h3 class="section-header">Methods</h3>
-				<ul class="link-list">
-					
-					<li><a href="#M000035">#attrs_to_string</a></li>
-					
-					<li><a href="#M000000">#comment</a></li>
-					
-					<li><a href="#M000033">#li</a></li>
-					
-					<li><a href="#M000034">#lis</a></li>
-					
-					<li><a href="#M000005">#table</a></li>
-					
-					<li><a href="#M000010">#tables</a></li>
-					
-					<li><a href="#M000024">#tbody</a></li>
-					
-					<li><a href="#M000028">#td</a></li>
-					
-					<li><a href="#M000029">#tds</a></li>
-					
-					<li><a href="#M000030">#tfoot</a></li>
-					
-					<li><a href="#M000016">#th</a></li>
-					
-					<li><a href="#M000015">#thead</a></li>
-					
-					<li><a href="#M000023">#ths</a></li>
-					
-					<li><a href="#M000026">#tr</a></li>
-					
-					<li><a href="#M000027">#trs</a></li>
-					
-					<li><a href="#M000031">#ul</a></li>
-					
-					<li><a href="#M000032">#uls</a></li>
-					
-					<li><a href="#M000001">#wrap</a></li>
-					
-				</ul>
-			</div>
-			
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#attrs_to_string-instance_method" title="#attrs_to_string (instance method)">- (Object) <strong>attrs_to_string</strong>(ops, keys = nil) </a>
+    
 
-			<!-- Included Modules -->
-			
-		</div>
+    
+  </span>
+  
+  
+  
+  
+  
+  
 
-		<div id="project-metadata">
-			
-			
-			<div id="fileindex-section" class="section project-section">
-				<h3 class="section-header">Files</h3>
-				<ul>
-				
-					<li class="file"><a href="./LICENSE_txt.html">LICENSE.txt</a></li>
-				
-					<li class="file"><a href="./README_rdoc.html">README.rdoc</a></li>
-				
-					<li class="file"><a href="./sixarm_ruby_html_gemspec.html">sixarm_ruby_html.gemspec</a></li>
-				
-					<li class="file"><a href="./sixarm_ruby_html_sha512_txt.html">sixarm_ruby_html.sha512.txt</a></li>
-				
-				</ul>
-			</div>
-			
-
-			<div id="classindex-section" class="section project-section">
-				<h3 class="section-header">Class Index
-					<span class="search-toggle"><img src="./images/find.png"
-						height="16" width="16" alt="[+]"
-						title="show/hide quicksearch" /></span></h3>
-				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
-				<fieldset>
-					<legend>Quicksearch</legend>
-					<input type="text" name="quicksearch" value=""
-						class="quicksearch-field" />
-				</fieldset>
-				</form>
-
-				<ul class="link-list">
-				
-					<li><a href="./HTML.html">HTML</a></li>
-				
-					<li><a href="./Testing.html">Testing</a></li>
-				
-				</ul>
-				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
-			</div>
-
-			
-		</div>
-	</div>
-
-	<div id="documentation">
-		<h1 class="module">HTML</h1>
-
-		<div id="description">
-			<h1>SixArm Ruby Gem: <a href="HTML.html">HTML</a> helpers for tables, lists, etc.</h1>
-<table>
-<tr><td valign="top">Author:</td><td>Joel Parker Henderson, joelparkerhenderson@gmail.com
-
-</td></tr>
-<tr><td valign="top">Copyright:</td><td>Copyright &#169; 2006-2010 Joel Parker Henderson
-
-</td></tr>
-<tr><td valign="top">License:</td><td>CreativeCommons License, Non-commercial Share Alike
-
-</td></tr>
-<tr><td valign="top">License:</td><td>LGPL, GNU Lesser General Public License
-
-</td></tr>
-</table>
-<h2>Changes</h2>
-<p>
-1.0.6 add to gemcutter 1.0.5 comment &amp; wrap 1.0.4 tables 1.0.0 lists
+  
+    <span class="summary_desc"><div class='inline'><p>
+There&#8217;s likely a better more-standard way to do this.
 </p>
+</div></span>
+  
+</li>
 
-		</div>
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#comment-instance_method" title="#comment (instance method)">- (Object) <strong>comment</strong>(text) </a>
+    
 
-		<!-- Constants -->
-		
+    
+  </span>
+  
+  
+  
+  
+  
+  
 
-		<!-- Attributes -->
-		
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return the text wrapped in a comment.
+</p>
+</div></span>
+  
+</li>
 
-		<!-- Methods -->
-		
-		<div id="public-instance-method-details" class="method-section section">
-			<h3 class="section-header">Public Instance Methods</h3>
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#li-instance_method" title="#li (instance method)">- (Object) <strong>li</strong>(item) </a>
+    
 
-		
-			<div id="comment-method" class="method-detail ">
-				<a name="M000000"></a>
+    
+  </span>
+  
+  
+  
+  
+  
+  
 
-				<div class="method-heading">
-				
-					<span class="method-name">comment</span><span
-						class="method-args">(text)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
 
-				<div class="method-description">
-					
-					<p>
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#lis-instance_method" title="#lis (instance method)">- (Object) <strong>lis</strong>(items) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return: .
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#table-instance_method" title="#table (instance method)">- (Object) <strong>table</strong>(ops = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Options:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tables-instance_method" title="#tables (instance method)">- (Object) <strong>tables</strong>(ops = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Options:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tbody-instance_method" title="#tbody (instance method)">- (Object) <strong>tbody</strong>(rows) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#td-instance_method" title="#td (instance method)">- (Object) <strong>td</strong>(cell) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tds-instance_method" title="#tds (instance method)">- (Object) <strong>tds</strong>(cells) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tfoot-instance_method" title="#tfoot (instance method)">- (Object) <strong>tfoot</strong>(footers) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#th-instance_method" title="#th (instance method)">- (Object) <strong>th</strong>(header) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#thead-instance_method" title="#thead (instance method)">- (Object) <strong>thead</strong>(headers) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ths-instance_method" title="#ths (instance method)">- (Object) <strong>ths</strong>(headers) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tr-instance_method" title="#tr (instance method)">- (Object) <strong>tr</strong>(row) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#trs-instance_method" title="#trs (instance method)">- (Object) <strong>trs</strong>(rows) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ul-instance_method" title="#ul (instance method)">- (Object) <strong>ul</strong>(list) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uls-instance_method" title="#uls (instance method)">- (Object) <strong>uls</strong>(lists) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return:.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#wrap-instance_method" title="#wrap (instance method)">- (Object) <strong>wrap</strong>(text, tag) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Return the text wrapped in a tag pair.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="attrs_to_string-instance_method">
+  
+    - (<tt>Object</tt>) <strong>attrs_to_string</strong>(ops, keys = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+There&#8217;s likely a better more-standard way to do this.
+</p>
+<p>
+This method is only used by the #table method.
+</p>
+<p>
+Return a string of the attributes suitable for HTML
+</p>
+<h2>Example</h2>
+<pre class="code">
+  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
+  attrs(hash) =&gt; ' foo=&quot;bar&quot; goo=&quot;car&quot; hoo=&quot;dar&quot;'
+  
+</pre>
+<h2>Example with selected keys</h2>
+<pre class="code">
+  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
+  attrs(hash,[:foo,:hoo]) =&gt; ' foo=&quot;bar&quot; hoo=&quot;dar&quot;'</pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/misc.rb', line 50</span>
+
+<span class='kw'>def</span> <span class='id attrs_to_string'>attrs_to_string</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='comma'>,</span><span class='id keys'>keys</span><span class='op'>=</span><span class='kw'>nil</span><span class='rparen'>)</span>
+ <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span> <span class='kw'>if</span> <span class='op'>!</span><span class='id ops'>ops</span> <span class='kw'>or</span> <span class='id ops'>ops</span><span class='op'>==</span><span class='lbrace'>{</span><span class='rbrace'>}</span>
+ <span class='id keys'>keys</span><span class='op'>||=</span><span class='id ops'>ops</span><span class='period'>.</span><span class='id keys'>keys</span>
+ <span class='kw'>return</span> <span class='id keys'>keys</span><span class='period'>.</span><span class='id inject'>inject</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id s'>s</span><span class='comma'>,</span><span class='id k'>k</span><span class='op'>|</span> <span class='id s'>s</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='id k'>k</span><span class='rbracket'>]</span> <span class='op'>?</span> <span class='id s'>s</span><span class='op'>+=</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id k'>k</span><span class='rbrace'>}</span><span class='tstring_content'>=\&quot;</span><span class='embexpr_beg'>#{</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='id k'>k</span><span class='rbracket'>]</span><span class='rbrace'>}</span><span class='tstring_content'>\&quot;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>:</span> <span class='id s'>s</span><span class='rparen'>)</span><span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="comment-instance_method">
+  
+    - (<tt>Object</tt>) <strong>comment</strong>(text) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return the text wrapped in a comment.
 </p>
 <h2>Example</h2>
-<pre>
-  comment('foo') =&gt; &quot;&lt;!--foo--&gt;&quot;
-</pre>
-					
+<pre class="code">
+  comment('foo') =&gt; &quot;&lt;!--foo--&gt;&quot;</pre>
 
-					
-					<div class="method-source-code"
-						id="comment-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 26</span>
-26:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">comment</span>(<span class="ruby-identifier">text</span>)
-27:     <span class="ruby-node">&quot;&lt;!--#{text}--&gt;&quot;</span>
-28:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="li-method" class="method-detail ">
-				<a name="M000033"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">li</span><span
-						class="method-args">(item)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+10
+11
+12</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/misc.rb', line 10</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id comment'>comment</span><span class='lparen'>(</span><span class='id text'>text</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;!--</span><span class='embexpr_beg'>#{</span><span class='id text'>text</span><span class='rbrace'>}</span><span class='tstring_content'>--&gt;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="li-instance_method">
+  
+    - (<tt>Object</tt>) <strong>li</strong>(item) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
-  &lt;li&gt;item&lt;/li&gt;
-</pre>
-					
+<pre class="code">
+  &lt;li&gt;item&lt;/li&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="li-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 304</span>
-304:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">li</span>(<span class="ruby-identifier">item</span>)
-305:     <span class="ruby-value str">&quot;&lt;li&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">item</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/li&gt;\n&quot;</span>
-306:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="lis-method" class="method-detail ">
-				<a name="M000034"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">lis</span><span
-						class="method-args">(items)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/lists.rb', line 46</span>
 
-				<div class="method-description">
-					
-					<p>
-Return:
+<span class='kw'>def</span> <span class='id li'>li</span><span class='lparen'>(</span><span class='id item'>item</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;li&gt;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id item'>item</span><span class='period'>.</span><span class='id to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/li&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="lis-instance_method">
+  
+    - (<tt>Object</tt>) <strong>lis</strong>(items) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Return: 
 </p>
-<pre>
+<pre class="code">
   &lt;li&gt;item[0]&lt;/li&gt;
   &lt;li&gt;item[1]&lt;/li&gt;
-  &lt;li&gt;item[2]&lt;/li&gt;
-</pre>
-					
+  &lt;li&gt;item[2]&lt;/li&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="lis-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 314</span>
-314:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">lis</span>(<span class="ruby-identifier">items</span>)
-315:     <span class="ruby-identifier">items</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">li</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-316:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="table-method" class="method-detail ">
-				<a name="M000005"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">table</span><span
-						class="method-args">(ops={})</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/lists.rb', line 56</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id lis'>lis</span><span class='lparen'>(</span><span class='id items'>items</span><span class='rparen'>)</span>
+  <span class='id items'>items</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id li'>li</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="table-instance_method">
+  
+    - (<tt>Object</tt>) <strong>table</strong>(ops = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Options:
 </p>
-<pre>
+<pre class="code">
   :text : the complete text of the table, e.g. &lt;table&gt;text&lt;/table&gt;
   :headers
   :footers
   :rows
-  :class is the table's css class, e.g. :class=&gt;'sortable'
+  :class is the table's css class, e.g. :class=&gt;'sortable' 
   :id is the table's css id, e.g. :id=&gt;'mytable'
 </pre>
 <h2>Example</h2>
-<pre>
+<pre class="code">
   headers = ['a','b','c']
   footers = ['x','y','z']
-  rows=[['d','e,'f'],['g','h,'i'],['j','k','l']
-  table(:id=&gt;'foo', :class=&gt;'bar', :headers=&gt;headers, :footers=&gt;footers, :rows=&gt;rows
+  rows=[['d','e,'f'],['g','h,'i'],['j','k','l']]
+  table(:id=&gt;'foo', :class=&gt;'bar', :headers=&gt;headers, :footers=&gt;footers, :rows=&gt;rows)
 </pre>
-<h2>Return <a href="HTML.html">HTML</a></h2>
-<pre>
+<h2>Return HTML</h2>
+<pre class="code">
   &lt;table id=&quot;foo&quot; class=&quot;bar&quot;&gt;
   &lt;thead&gt;
   &lt;tr&gt;
@@ -354,7 +759,6 @@ Options:
   &lt;/tbody&gt;
   &lt;tfoot&gt;
   &lt;tr&gt;
-  &lt;th&gt;
   &lt;th&gt;x&lt;/th&gt;
   &lt;th&gt;y&lt;/th&gt;
   &lt;th&gt;z&lt;/th&gt;
@@ -370,97 +774,113 @@ If headers or row or footers are nil, then this skips them.
 If footers==[] then this method will use a footers array with blanks that
 is the same length as the headers array.
 </p>
-					
 
-					
-					<div class="method-source-code"
-						id="table-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 109</span>
-109:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">table</span>(<span class="ruby-identifier">ops</span>={})
-110:     <span class="ruby-identifier">text</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:text</span>]
-111:     <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">text</span>
-112:      <span class="ruby-identifier">headers</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:headers</span>]
-113:      <span class="ruby-identifier">footers</span>=(<span class="ruby-keyword kw">defined?</span>(<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]) <span class="ruby-operator">?</span> ((<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]<span class="ruby-operator">==</span><span class="ruby-keyword kw">true</span>) <span class="ruby-operator">?</span> <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">headers</span>.<span class="ruby-identifier">size</span>,<span class="ruby-value str">''</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:footers</span>]) <span class="ruby-operator">:</span> <span class="ruby-keyword kw">false</span>)
-114:      <span class="ruby-identifier">rows</span>=<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:rows</span>]
-115:      <span class="ruby-identifier">text</span>=((<span class="ruby-identifier">headers</span> <span class="ruby-value">? </span><span class="ruby-identifier">thead</span>(<span class="ruby-identifier">headers</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">rows</span> <span class="ruby-value">? </span><span class="ruby-identifier">tbody</span>(<span class="ruby-identifier">rows</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>) <span class="ruby-operator">+</span> (<span class="ruby-identifier">footers</span> <span class="ruby-value">? </span><span class="ruby-identifier">tfoot</span>(<span class="ruby-identifier">footers</span>) <span class="ruby-operator">:</span> <span class="ruby-value str">''</span>))
-116:     <span class="ruby-keyword kw">end</span>
-117:     <span class="ruby-keyword kw">return</span> <span class="ruby-node">&quot;&lt;table#{attrs_to_string(ops,[:id,:class])}&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">text</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/table&gt;\n&quot;</span>
-118:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="tables-method" class="method-detail ">
-				<a name="M000010"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">tables</span><span
-						class="method-args">(ops={})</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 62</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id table'>table</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id text'>text</span><span class='op'>=</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:text</span><span class='rbracket'>]</span>
+  <span class='kw'>if</span> <span class='op'>!</span><span class='id text'>text</span>
+   <span class='id headers'>headers</span><span class='op'>=</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:headers</span><span class='rbracket'>]</span>
+   <span class='id footers'>footers</span><span class='op'>=</span><span class='lparen'>(</span><span class='kw'>defined?</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:footers</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='lparen'>(</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:footers</span><span class='rbracket'>]</span><span class='op'>==</span><span class='kw'>true</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='const'>Array</span><span class='period'>.</span><span class='id new'>new</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='period'>.</span><span class='id size'>size</span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:footers</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='kw'>false</span><span class='rparen'>)</span>
+   <span class='id rows'>rows</span><span class='op'>=</span><span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:rows</span><span class='rbracket'>]</span>
+   <span class='id text'>text</span><span class='op'>=</span><span class='lparen'>(</span><span class='lparen'>(</span><span class='id headers'>headers</span> <span class='op'>?</span> <span class='id thead'>thead</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id rows'>rows</span> <span class='op'>?</span> <span class='id tbody'>tbody</span><span class='lparen'>(</span><span class='id rows'>rows</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id footers'>footers</span> <span class='op'>?</span> <span class='id tfoot'>tfoot</span><span class='lparen'>(</span><span class='id footers'>footers</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='kw'>return</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;table</span><span class='embexpr_beg'>#{</span><span class='id attrs_to_string'>attrs_to_string</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='comma'>,</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='comma'>,</span><span class='symbol'>:class</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='tstring_content'>&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id text'>text</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/table&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tables-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tables</strong>(ops = {}) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Options:
 </p>
-<pre>
-  :texts
+<pre class="code">
+  <span class='symbol'>:texts</span>
 </pre>
 <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;table&gt;
   texts[0]
   &lt;/table&gt;
   &lt;table&gt;
   texts[0]
   &lt;/table&gt;
-  ...
-</pre>
-					
+  ...</pre>
 
-					
-					<div class="method-source-code"
-						id="tables-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 133</span>
-133:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tables</span>(<span class="ruby-identifier">ops</span>={})
-134:     <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">:texts</span>].<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">text</span><span class="ruby-operator">|</span> <span class="ruby-identifier">table</span>(<span class="ruby-identifier">ops</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">:text=</span><span class="ruby-operator">&gt;</span><span class="ruby-identifier">text</span>))}.<span class="ruby-identifier">join</span>
-135:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="tbody-method" class="method-detail ">
-				<a name="M000024"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">tbody</span><span
-						class="method-args">(rows)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 86</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id tables'>tables</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id ops'>ops</span><span class='lbracket'>[</span><span class='symbol'>:texts</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id text'>text</span><span class='op'>|</span> <span class='id table'>table</span><span class='lparen'>(</span><span class='id ops'>ops</span><span class='period'>.</span><span class='id merge'>merge</span><span class='lparen'>(</span><span class='symbol'>:text</span><span class='op'>=&gt;</span><span class='id text'>text</span><span class='rparen'>)</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tbody-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tbody</strong>(rows) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;tbody&gt;
   &lt;tr&gt;
   &lt;td&gt;row[0][0]&lt;/td&gt;
@@ -477,278 +897,306 @@ Return:
   &lt;td&gt;row[2][1]&lt;/td&gt;
   &lt;td&gt;row[2][2]&lt;/td&gt;
   &lt;/tr&gt;
-  &lt;/tbody&gt;
-</pre>
-					
+  &lt;/tbody&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="tbody-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 187</span>
-187:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tbody</span>(<span class="ruby-identifier">rows</span>)
-188:     <span class="ruby-value str">&quot;&lt;tbody&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">trs</span>(<span class="ruby-identifier">rows</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tbody&gt;\n&quot;</span>
-189:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="td-method" class="method-detail ">
-				<a name="M000028"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">td</span><span
-						class="method-args">(cell)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+140
+141
+142</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 140</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id tbody'>tbody</span><span class='lparen'>(</span><span class='id rows'>rows</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;tbody&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id trs'>trs</span><span class='lparen'>(</span><span class='id rows'>rows</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/tbody&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="td-instance_method">
+  
+    - (<tt>Object</tt>) <strong>td</strong>(cell) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
-  &lt;td&gt;cell&lt;/td&gt;
-</pre>
-					
+<pre class="code">
+  &lt;td&gt;cell&lt;/td&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="td-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 234</span>
-234:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">td</span>(<span class="ruby-identifier">cell</span>)
-235:     <span class="ruby-value str">&quot;&lt;td&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">cell</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/td&gt;\n&quot;</span>
-236:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="tds-method" class="method-detail ">
-				<a name="M000029"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">tds</span><span
-						class="method-args">(cells)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+187
+188
+189</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 187</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id td'>td</span><span class='lparen'>(</span><span class='id cell'>cell</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;td&gt;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id cell'>cell</span><span class='period'>.</span><span class='id to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/td&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tds-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tds</strong>(cells) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;td&gt;cells[0]&lt;/td&gt;
   &lt;td&gt;cells[1]&lt;/td&gt;
-  &lt;td&gt;cells[2]&lt;/td&gt;
-</pre>
-					
+  &lt;td&gt;cells[2]&lt;/td&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="tds-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 244</span>
-244:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tds</span>(<span class="ruby-identifier">cells</span>)
-245:     <span class="ruby-identifier">cells</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">td</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-246:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="tfoot-method" class="method-detail ">
-				<a name="M000030"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">tfoot</span><span
-						class="method-args">(footers)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+197
+198
+199</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 197</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id tds'>tds</span><span class='lparen'>(</span><span class='id cells'>cells</span><span class='rparen'>)</span>
+  <span class='id cells'>cells</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id td'>td</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tfoot-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tfoot</strong>(footers) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;tfoot&gt;
   &lt;th&gt;
   &lt;th&gt;footer[0]&lt;/th&gt;
   &lt;th&gt;footer[1]&lt;/th&gt;
   &lt;th&gt;footer[2]&lt;/th&gt;
-  &lt;/tfoot&gt;
-</pre>
-					
+  &lt;/tfoot&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="tfoot-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 257</span>
-257:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tfoot</span>(<span class="ruby-identifier">footers</span>)
-258:     <span class="ruby-value str">&quot;&lt;tfoot&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">ths</span>(<span class="ruby-identifier">footers</span>)) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tfoot&gt;\n&quot;</span>
-259:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="th-method" class="method-detail ">
-				<a name="M000016"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">th</span><span
-						class="method-args">(header)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+210
+211
+212</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 210</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id tfoot'>tfoot</span><span class='lparen'>(</span><span class='id footers'>footers</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;tfoot&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id tr'>tr</span><span class='lparen'>(</span><span class='id ths'>ths</span><span class='lparen'>(</span><span class='id footers'>footers</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/tfoot&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="th-instance_method">
+  
+    - (<tt>Object</tt>) <strong>th</strong>(header) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
-  &lt;th&gt;header&lt;/th&gt;
-</pre>
-					
+<pre class="code">
+  &lt;th&gt;header&lt;/th&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="th-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 153</span>
-153:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">th</span>(<span class="ruby-identifier">header</span>)
-154:     <span class="ruby-value str">&quot;&lt;th&gt;&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">header</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/th&gt;\n&quot;</span>
-155:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="thead-method" class="method-detail ">
-				<a name="M000015"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">thead</span><span
-						class="method-args">(headers)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+106
+107
+108</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 106</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id th'>th</span><span class='lparen'>(</span><span class='id header'>header</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;th&gt;</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id header'>header</span><span class='period'>.</span><span class='id to_s'>to_s</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/th&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="thead-instance_method">
+  
+    - (<tt>Object</tt>) <strong>thead</strong>(headers) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;thead&gt;
   &lt;th&gt;header[0]&lt;/th&gt;
   &lt;th&gt;header[1]&lt;/th&gt;
   &lt;th&gt;header[2]&lt;/th&gt;
-  &lt;/thead&gt;
-</pre>
-					
+  &lt;/thead&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="thead-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 145</span>
-145:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">thead</span>(<span class="ruby-identifier">headers</span>)
-146:     <span class="ruby-value str">&quot;&lt;thead&gt;\n&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">ths</span>(<span class="ruby-identifier">headers</span>)) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/thead&gt;\n&quot;</span>
-147:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="ths-method" class="method-detail ">
-				<a name="M000023"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">ths</span><span
-						class="method-args">(headers)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+98
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 98</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id thead'>thead</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;thead&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id tr'>tr</span><span class='lparen'>(</span><span class='id ths'>ths</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='rparen'>)</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/thead&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ths-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ths</strong>(headers) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;th&gt;header[0]&lt;/th&gt;
   &lt;th&gt;header[1]&lt;/th&gt;
-  &lt;th&gt;header[2]&lt;/th&gt;
-</pre>
-					
+  &lt;th&gt;header[2]&lt;/th&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="ths-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 163</span>
-163:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ths</span>(<span class="ruby-identifier">headers</span>)
-164:     <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">th</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-165:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="tr-method" class="method-detail ">
-				<a name="M000026"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">tr</span><span
-						class="method-args">(row)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+116
+117
+118</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 116</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id ths'>ths</span><span class='lparen'>(</span><span class='id headers'>headers</span><span class='rparen'>)</span>
+  <span class='id headers'>headers</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id th'>th</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tr-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tr</strong>(row) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
  &lt;tr&gt;
  row
  &lt;/tr&gt;
@@ -756,48 +1204,52 @@ Return:
 <p>
 Return when row is enumerable:
 </p>
-<pre>
+<pre class="code">
   &lt;tr&gt;
   &lt;td&gt;row[0]&lt;/td&gt;
   &lt;td&gt;row[1]&lt;/td&gt;
   &lt;td&gt;row[2]&lt;/td&gt;
-  &lt;/tr&gt;
-</pre>
-					
+  &lt;/tr&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="tr-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 204</span>
-204:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">row</span>)
-205:     <span class="ruby-value str">&quot;&lt;tr&gt;\n&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">row</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">row</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">tds</span>(<span class="ruby-identifier">row</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">row</span>.<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/tr&gt;\n&quot;</span>
-206:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="trs-method" class="method-detail ">
-				<a name="M000027"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">trs</span><span
-						class="method-args">(rows)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+157
+158
+159</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 157</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id tr'>tr</span><span class='lparen'>(</span><span class='id row'>row</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;tr&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id row'>row</span><span class='period'>.</span><span class='id is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id row'>row</span> <span class='op'>:</span> <span class='id row'>row</span><span class='period'>.</span><span class='id is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Enumerable</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id tds'>tds</span><span class='lparen'>(</span><span class='id row'>row</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id row'>row</span><span class='period'>.</span><span class='id to_s'>to_s</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/tr&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="trs-instance_method">
+  
+    - (<tt>Object</tt>) <strong>trs</strong>(rows) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;tr&gt;
   &lt;td&gt;row[0][0]&lt;/td&gt;
   &lt;td&gt;row[0][1]&lt;/td&gt;
@@ -812,43 +1264,47 @@ Return:
   &lt;td&gt;row[2][0]&lt;/td&gt;
   &lt;td&gt;row[2][1]&lt;/td&gt;
   &lt;td&gt;row[2][2]&lt;/td&gt;
-  &lt;/tr&gt;
-</pre>
-					
+  &lt;/tr&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="trs-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 226</span>
-226:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">trs</span>(<span class="ruby-identifier">rows</span>)
-227:     <span class="ruby-identifier">rows</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">tr</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-228:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="ul-method" class="method-detail ">
-				<a name="M000031"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">ul</span><span
-						class="method-args">(list)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+179
+180
+181</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/tables.rb', line 179</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id trs'>trs</span><span class='lparen'>(</span><span class='id rows'>rows</span><span class='rparen'>)</span>
+  <span class='id rows'>rows</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id tr'>tr</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="ul-instance_method">
+  
+    - (<tt>Object</tt>) <strong>ul</strong>(list) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;ul&gt;
   list
   &lt;/ul&gt;
@@ -856,48 +1312,52 @@ Return:
 <p>
 Return when list is enumerable:
 </p>
-<pre>
+<pre class="code">
   &lt;ul&gt;
   &lt;li&gt;list[1]&lt;/li&gt;
   &lt;li&gt;list[2]&lt;/li&gt;
   &lt;li&gt;list[3]&lt;/li&gt;
-  &lt;/ul&gt;
-</pre>
-					
+  &lt;/ul&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="ul-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 274</span>
-274:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">ul</span>(<span class="ruby-identifier">list</span>)
-275:     <span class="ruby-value str">&quot;&lt;ul&gt;\n&quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">list</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">String</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">list</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Enumerable</span>) <span class="ruby-operator">?</span> <span class="ruby-identifier">lis</span>(<span class="ruby-identifier">list</span>) <span class="ruby-operator">:</span> <span class="ruby-identifier">list</span>.<span class="ruby-identifier">to_s</span>) <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;&lt;/ul&gt;\n&quot;</span>
-276:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="uls-method" class="method-detail ">
-				<a name="M000032"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">uls</span><span
-						class="method-args">(lists)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/lists.rb', line 16</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id ul'>ul</span><span class='lparen'>(</span><span class='id list'>list</span><span class='rparen'>)</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;ul&gt;\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id list'>list</span><span class='period'>.</span><span class='id is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>String</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id list'>list</span> <span class='op'>:</span> <span class='id list'>list</span><span class='period'>.</span><span class='id is_a?'>is_a?</span><span class='lparen'>(</span><span class='const'>Enumerable</span><span class='rparen'>)</span> <span class='op'>?</span> <span class='id lis'>lis</span><span class='lparen'>(</span><span class='id list'>list</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id list'>list</span><span class='period'>.</span><span class='id to_s'>to_s</span><span class='rparen'>)</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;/ul&gt;\n</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="uls-instance_method">
+  
+    - (<tt>Object</tt>) <strong>uls</strong>(lists) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return:
 </p>
-<pre>
+<pre class="code">
   &lt;ul&gt;
   &lt;li&gt;list[0][1]&lt;/li&gt;
   &lt;li&gt;list[0][2]&lt;/li&gt;
@@ -912,154 +1372,103 @@ Return:
   &lt;li&gt;list[2][1]&lt;/li&gt;
   &lt;li&gt;list[2][2]&lt;/li&gt;
   &lt;li&gt;list[2][3]&lt;/li&gt;
-  &lt;/ul&gt;
-</pre>
-					
+  &lt;/ul&gt;</pre>
 
-					
-					<div class="method-source-code"
-						id="uls-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 296</span>
-296:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">uls</span>(<span class="ruby-identifier">lists</span>)
-297:    <span class="ruby-identifier">lists</span>.<span class="ruby-identifier">map</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> <span class="ruby-identifier">ul</span>(<span class="ruby-identifier">x</span>)}.<span class="ruby-identifier">join</span>
-298:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
 
-				
-			</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-		
-			<div id="wrap-method" class="method-detail ">
-				<a name="M000001"></a>
 
-				<div class="method-heading">
-				
-					<span class="method-name">wrap</span><span
-						class="method-args">(text,tag)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/lists.rb', line 38</span>
 
-				<div class="method-description">
-					
-					<p>
+<span class='kw'>def</span> <span class='id uls'>uls</span><span class='lparen'>(</span><span class='id lists'>lists</span><span class='rparen'>)</span>
+ <span class='id lists'>lists</span><span class='period'>.</span><span class='id map'>map</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id x'>x</span><span class='op'>|</span> <span class='id ul'>ul</span><span class='lparen'>(</span><span class='id x'>x</span><span class='rparen'>)</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id join'>join</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="wrap-instance_method">
+  
+    - (<tt>Object</tt>) <strong>wrap</strong>(text, tag) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
 Return the text wrapped in a tag pair.
 </p>
 <h2>Example</h2>
-<pre>
+<pre class="code">
   wrap('foo','&lt;bar&gt;') =&gt; &quot;&lt;bar&gt;foo&lt;/bar&gt;&quot;
 </pre>
 <h2>Example: you can omit the tag angle brackets</h2>
-<pre>
+<pre class="code">
   wrap('foo','bar') =&gt; &quot;&lt;bar&gt;foo&lt;/bar&gt;&quot;
 </pre>
 <h2>Example: you can use arbitrary tag attributes</h2>
-<pre>
-  wrap('foo','&lt;bar x=&quot;1&quot; y=&quot;2&quot;&gt;') =&gt; &quot;&lt;bar x=1 y=2&gt;foo&lt;/bar&gt;&quot;
-</pre>
-					
-
-					
-					<div class="method-source-code"
-						id="wrap-source">
-<pre>
-    <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 42</span>
-42:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">wrap</span>(<span class="ruby-identifier">text</span>,<span class="ruby-identifier">tag</span>)
-43:     <span class="ruby-identifier">t</span>=<span class="ruby-identifier">tag</span>
-44:     <span class="ruby-identifier">t</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp re">/^&lt;/</span>,<span class="ruby-value str">''</span>)
-45:     <span class="ruby-identifier">t</span>.<span class="ruby-identifier">sub!</span>(<span class="ruby-regexp re">/&gt;$/</span>,<span class="ruby-value str">''</span>)
-46:     <span class="ruby-identifier">open</span>=<span class="ruby-identifier">t</span>
-47:     <span class="ruby-identifier">shut</span>=<span class="ruby-identifier">t</span>.<span class="ruby-identifier">split</span>.<span class="ruby-identifier">first</span>
-48:     <span class="ruby-node">&quot;&lt;#{open}&gt;#{text}&lt;/#{shut}&gt;&quot;</span>
-49:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-		</div>
-	
-		<div id="protected-instance-method-details" class="method-section section">
-			<h3 class="section-header">Protected Instance Methods</h3>
-
-		
-			<div id="attrs-to-string-method" class="method-detail ">
-				<a name="M000035"></a>
-
-				<div class="method-heading">
-				
-					<span class="method-name">attrs_to_string</span><span
-						class="method-args">(ops,keys=nil)</span>
-					<span class="method-click-advice">click to toggle source</span>
-				
-				</div>
-
-				<div class="method-description">
-					
-					<p>
-There&#8217;s likely a better more-standard way to do this.
-</p>
-<p>
-This method is only used by the <a href="HTML.html#M000005">table</a>
-method.
-</p>
-<p>
-Return a string of the attributes suitable for <a href="HTML.html">HTML</a>
-</p>
-<h2>Example</h2>
-<pre>
-  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
-  attrs(hash) =&gt; ' foo=&quot;bar&quot; goo=&quot;car&quot; hoo=&quot;dar&quot;'
-</pre>
-<h2>Example with selected keys</h2>
-<pre>
-  hash={:foo'=&gt;'bar',:goo'=&gt;'car',;hoo=&gt;'dar'}
-  attrs(hash,[:foo,:hoo]) =&gt; ' foo=&quot;bar&quot; hoo=&quot;dar&quot;'
-</pre>
-					
-
-					
-					<div class="method-source-code"
-						id="attrs-to-string-source">
-<pre>
-     <span class="ruby-comment cmt"># File lib/sixarm_ruby_html.rb, line 336</span>
-336:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">attrs_to_string</span>(<span class="ruby-identifier">ops</span>,<span class="ruby-identifier">keys</span>=<span class="ruby-keyword kw">nil</span>)
-337:    <span class="ruby-keyword kw">return</span> <span class="ruby-value str">''</span> <span class="ruby-keyword kw">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">ops</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">ops</span><span class="ruby-operator">==</span>{}
-338:    <span class="ruby-identifier">keys</span><span class="ruby-operator">||=</span><span class="ruby-identifier">ops</span>.<span class="ruby-identifier">keys</span>
-339:    <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">keys</span>.<span class="ruby-identifier">inject</span>(<span class="ruby-value str">''</span>){<span class="ruby-operator">|</span><span class="ruby-identifier">s</span>,<span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span> = (<span class="ruby-identifier">ops</span>[<span class="ruby-identifier">k</span>] <span class="ruby-operator">?</span> <span class="ruby-identifier">s</span><span class="ruby-operator">+=</span><span class="ruby-node">&quot; #{k}=\&quot;#{ops[k]}\&quot;&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">s</span>)}
-340:   <span class="ruby-keyword kw">end</span></pre>
-					</div>
-					
-				</div>
-
-				
-			</div>
-
-		
-		</div>
-	
-
-	</div>
+<pre class="code">
+  wrap('foo','&lt;bar x=&quot;1&quot; y=&quot;2&quot;&gt;') =&gt; &quot;&lt;bar x=1 y=2&gt;foo&lt;/bar&gt;&quot;</pre>
 
 
-	<div id="rdoc-debugging-section-dump" class="debugging-section">
-	
-		<p>Disabled; run with --debug to generate this.</p>
-	
-	</div>
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
 
-	<div id="validator-badges">
-		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
-		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
-			Rdoc Generator</a> 1.1.6</small>.</p>
-	</div>
 
-</body>
+26
+27
+28
+29
+30
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sixarm_ruby_html/misc.rb', line 26</span>
+
+<span class='kw'>def</span> <span class='id wrap'>wrap</span><span class='lparen'>(</span><span class='id text'>text</span><span class='comma'>,</span><span class='id tag'>tag</span><span class='rparen'>)</span>
+  <span class='id t'>t</span><span class='op'>=</span><span class='id tag'>tag</span>
+  <span class='id t'>t</span><span class='period'>.</span><span class='id sub!'>sub!</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^&lt;</span><span class='regexp_end'>/</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+  <span class='id t'>t</span><span class='period'>.</span><span class='id sub!'>sub!</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>&gt;$</span><span class='regexp_end'>/</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+  <span class='id open'>open</span><span class='op'>=</span><span class='id t'>t</span>
+  <span class='id shut'>shut</span><span class='op'>=</span><span class='id t'>t</span><span class='period'>.</span><span class='id split'>split</span><span class='period'>.</span><span class='id first'>first</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&lt;</span><span class='embexpr_beg'>#{</span><span class='id open'>open</span><span class='rbrace'>}</span><span class='tstring_content'>&gt;</span><span class='embexpr_beg'>#{</span><span class='id text'>text</span><span class='rbrace'>}</span><span class='tstring_content'>&lt;/</span><span class='embexpr_beg'>#{</span><span class='id shut'>shut</span><span class='rbrace'>}</span><span class='tstring_content'>&gt;</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Mon Dec 13 17:53:06 2010 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.3 (ruby-1.9.2).
+</div>
+
+  </body>
 </html>
-
