@@ -1,11 +1,15 @@
+# -*- encoding: utf-8 -*-
 =begin rdoc
 
-= SixArm Ruby Gem: HTML helpers for tables, lists, etc.
+= SixArm Ruby Gem » HTML
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
-License:: CreativeCommons License, Non-commercial Share Alike
-License:: LGPL, GNU Lesser General Public License
+License:: Your choice of BSD, MIT, LGPL, or CreativeCommons Non-commercial Share Alike
+
+HTML utility methods to generate well-formed HTML for tables, lists, etc.
+
+This is typically to render Ruby objects, such as arrays, as HTML output.
 
 == Table Methods
 
