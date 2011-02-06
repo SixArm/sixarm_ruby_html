@@ -1,0 +1,5 @@
+= SixArm.com » Ruby » HTML utility methods to generate lists, tables, etc.
+                   
+Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
+Copyright:: Copyright (c) 2008-2011 Joel Parker Henderson
+License:: See LICENSE.txt file
