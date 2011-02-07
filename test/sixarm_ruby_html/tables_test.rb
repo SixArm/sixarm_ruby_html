@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'test/unit'
 require 'sixarm_ruby_html'
 
@@ -32,8 +33,8 @@ class TablesTest < Test::Unit::TestCase
     assert_equal("<th>a</th>\n<th>b</th>\n<th>c</th>\n",ths(CELLS))
   end
 
-  def test_thead(headers)
-    assert_equal("<thead>\n<tr>\n<th>a</th>\n<th>b</th>\n<th>c</th>\n</tr>\n</thead>",thead(CELLS))
+  def test_thead
+    assert_equal("<thead>\n<tr>\n<th>a</th>\n<th>b</th>\n<th>c</th>\n</tr>\n</thead>\n",thead(CELLS))
   end
 
   def test_tfoot
