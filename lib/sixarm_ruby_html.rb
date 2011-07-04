@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
+
 =begin rdoc
 
-= SixArm Ruby Gem: HTML helpers for tables, lists, etc.
+= SixArm Ruby Gem: HTML helpers for layouts, lists, tables, etc.
 
 Author:: Joel Parker Henderson, joelparkerhenderson@gmail.com
 Copyright:: Copyright (c) 2006-2010 Joel Parker Henderson
@@ -62,7 +64,7 @@ Examples:
 Examples:
   ul(['a','b','c']) =>
   <ul><li>a</li><li>b</li><li>c</li></ul>
-  
+
   uls(['a','b','c'],['d','e','f'],[1,2,3]) =>
   <ul><li>a</li><li>b</li><li>c</li></ul><ul><li>d</li><li>e</li><li>f</li></ul><ul><li>1</li><li>2</li><li>3</li></ul>
 
@@ -74,7 +76,7 @@ Examples:
 Examples:
   comment('the following comes from') =>
   <!-- the following comes from -->
-  
+
   wrap('foo', 'bar') =>
   <bar>foo</bar>
 

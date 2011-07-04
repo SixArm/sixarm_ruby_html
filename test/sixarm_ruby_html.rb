@@ -1,3 +1,5 @@
+require 'simplecov'
+SimpleCov.start
 require 'test/unit'
 
 ['lists','misc','tables'].map{|x|
