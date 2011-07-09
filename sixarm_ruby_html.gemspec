@@ -1,14 +1,11 @@
 Gem::Specification.new do |s|
 
-  NAME		      = 'sixarm_ruby_html'
-  CLASSES             = ['lists','misc','tables']
-  MAIN_FILES          = ["lib/#{NAME}.rb"] + CLASSES.map{|c| "lib/#{NAME}/#{c}.rb"}
-  TEST_FILES          = ["test/#{NAME}.rb"] + CLASSES.map{|c| "test/#{NAME}/#{c}_test.rb"}
-  DATA_FILES          = []
-  HELP_FILES	      = ['README.rdoc','LICENSE.txt']
+  NAME                = "sixarm_ruby_html"
+  SOURCES             = ['lists','misc','tables']
+  TESTERS             = []
 
   s.name              = NAME
-  s.summary           = "SixArm Ruby Gem: HTML helpers for tables, headers, rows, cells, lists, etc."
+  s.summary           = "SixArm.com » Ruby » HTML helpers for tables, headers, rows, cells, lists, etc."
   s.version           = "1.1.0"
   s.author            = "SixArm"
   s.email             = "sixarm@sixarm.com"
