@@ -1,10 +1,6 @@
 Gem::Specification.new do |s|
 
-  NAME                = "sixarm_ruby_html"
-  SOURCES             = ['lists','misc','tables']
-  TESTERS             = []
-
-  s.name              = NAME
+  s.name              = "sixarm_ruby_html"
   s.summary           = "SixArm.com » Ruby » HTML helpers for tables, headers, rows, cells, lists, etc."
   s.version           = "1.1.0"
   s.author            = "SixArm"
@@ -16,6 +12,10 @@ Gem::Specification.new do |s|
   s.platform          = Gem::Platform::RUBY
   s.require_path      = 'lib'
   s.has_rdoc          = true
+
+  SOURCES             = ['lists','misc','tables']
+  TESTERS             = []
+
   s.files             = HELP_FILES + MAIN_FILES + TEST_FILES + DATA_FILES
   s.test_files        = TEST_FILES + DATA_FILES
 

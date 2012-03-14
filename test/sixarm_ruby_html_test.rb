@@ -5,7 +5,7 @@ require 'test/unit'
 require 'sixarm_ruby_html'
 
 ['lists','misc','tables'].map{|x|
-  require "sixarm_ruby_html/#{x}_test.rb"
+  require "sixarm_ruby_html_test/#{x}_test.rb"
 }
 
 
