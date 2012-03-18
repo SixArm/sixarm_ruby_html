@@ -2,18 +2,18 @@
 require 'minitest/autorun'
 require 'sixarm_ruby_html'
 
-class MiscTest < Test::Unit::TestCase
+describe HTML do
 
   include HTML
 
-  def test_comment
-    assert_equal("<!--a-->",comment('a'))
+  it "#comment" do
+    comment('a').must_equal "<!--a-->"
   end
 
-  def test_wrap
-    assert_equal("<b>a</b>",wrap('a','<b>'))
-    assert_equal("<b>a</b>",wrap('a','b'))
-    assert_equal("<b c d e>a</b>",wrap('a','b c d e'))
+  it "#wrap" do
+    wrap('a','<b>').must_equal "<b>a</b>"
+    wrap('a','b').must_equal "<b>a</b>"
+    wrap('a','b c d e').must_equal "<b c d e>a</b>"
   end
 
 end

@@ -1,8 +1,0 @@
-CHANGELOG
-
-1.1.0 add files for lists, misc, tables
-1.0.6 add to gemcutter
-1.0.5 comment & wrap
-1.0.4 tables
-1.0.0 lists
-

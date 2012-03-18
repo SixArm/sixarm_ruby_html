@@ -2,17 +2,27 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta name="Content-Type" content="text/html; charset=utf-8" />
-<title>Documentation by YARD 0.6.4</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.7.5
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '';
   if (relpath != '') relpath += '/';
 </script>
-<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
 
   </head>
   <body>
@@ -31,40 +41,196 @@
 </div>
 
       <div id="search">
-  <a id="class_list_link" href="#">Class List</a>
-  <a id="method_list_link" href="#">Method List</a>
-  <a id ="file_list_link" href="#">File List</a>
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
 </div>
-
       <div class="clear"></div>
     </div>
     
     <iframe id="search_frame"></iframe>
     
-    <div id="content"><div id='filecontents'><h1>SixArm.com » Ruby » HTML utility methods to generate lists, tables, etc.</h1>
-<pre class="code">
-                   
-</pre>
-<table>
-<tr><td valign="top">Author</td><td><p>
-Joel Parker Henderson, joelparkerhenderson@gmail.com
-</p>
-</td></tr>
-<tr><td valign="top">Copyright</td><td><p>
-Copyright &#169; 2008-2011 Joel Parker Henderson
-</p>
-</td></tr>
-<tr><td valign="top">License</td><td><p>
-See LICENSE.txt file
-</p>
-</td></tr>
-</table>
+    <div id="content"><div id='filecontents'><h1>SixArm.com » Ruby » <br> HTML utility methods to generate lists, tables, etc.</h1>
+
+<ul>
+<li>Docs: <a href="http://sixarm.com/sixarm_ruby_html/doc">http://sixarm.com/sixarm_ruby_html/doc</a></li>
+<li>Repo: <a href="http://github.com/sixarm/sixarm_ruby_html">http://github.com/sixarm/sixarm_ruby_html</a></li>
+<li>Email: Joel Parker Henderson, <a href="mailto:joel@sixarm.com">joel@sixarm.com</a></li>
+</ul>
+
+<h2>Introduction</h2>
+
+<p>HTML utility methods to generate well-formed HTML for tables, lists, etc.</p>
+
+<p>This is typically to render Ruby objects, such as arrays, as HTML output.</p>
+
+<p>For docs go to <a href="http://sixarm.com/sixarm_ruby_html/doc">http://sixarm.com/sixarm_ruby_html/doc</a></p>
+
+<p>Want to help? We&#39;re happy to get pull requests.</p>
+
+<h2>Quickstart</h2>
+
+<p>Install:</p>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_sixarm_ruby_html'>sixarm_ruby_html</span>
+</code></pre>
+
+<p>Bundler:</p>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_gem'>gem</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_html</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>=1.2.0</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<p>Require:</p>
+
+<pre class="code ruby"><code><span class='id identifier rubyid_require'>require</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>sixarm_ruby_html</span><span class='tstring_end'>&quot;</span></span>
+</code></pre>
+
+<h2>Install with high security (optional)</h2>
+
+<p>To enable high security for all our gems:</p>
+
+<pre class="code ruby"><code>wget http://sixarm.com/sixarm.pem
+gem cert --add sixarm.pem
+gem sources --add http://sixarm.com
+</code></pre>
+
+<p>To install with high security:</p>
+
+<pre class="code ruby"><code>gem install sixarm_ruby_html --test --trust-policy HighSecurity
+</code></pre>
+
+<h2>Table Methods</h2>
+
+<ul>
+<li>table - Builds an HTML table from the supplied parameters: string CSS: ID, Class; array of strings: Headers, Footers; array of array of string: Rows</li>
+<li>tables - Builds one or more HTML tables from a supplied array of arrays (each sub-array holding the params specified for the table method)</li>
+<li>thead - Builds the thead section of a table from an array of strings</li>
+<li>th - Returns a TH table cell</li>
+<li>ths - Returns a string of TH table cells</li>
+<li>tbody - Builds the tbody section of a table from an array of arrays of strings (each sub-array becomes a table row)</li>
+<li>tr - Returns a TR table row</li>
+<li>trs - Returns a string of TR table rows</li>
+<li>td - Returns a TD table cell</li>
+<li>tds - Returns a string of TD table cells</li>
+<li>tfoot - Builds the tfoot section of a table from an array of strings</li>
+</ul>
+
+<h2>Table Examples</h2>
+
+<pre class="code ruby"><code>headers = ['a','b','c']
+footers = ['x','y','z']
+rows=[['d','e,'f']]
+table(:id=&gt;'foo', :class=&gt;'bar', :headers=&gt;headers, :footers=&gt;footers, :rows=&gt;rows)
+=&gt;
+&lt;table id=&quot;foo&quot; class=&quot;bar&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;a&lt;/th&gt;
+&lt;th&gt;b&lt;/th&gt;
+&lt;th&gt;c&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;d&lt;/td&gt;
+&lt;td&gt;e&lt;/td&gt;
+&lt;td&gt;f&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;tfoot&gt;
+&lt;tr&gt;
+&lt;th&gt;x&lt;/th&gt;
+&lt;th&gt;y&lt;/th&gt;
+&lt;th&gt;z&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
+
+<h2>List Methods</h2>
+
+<ul>
+<li>ul - Builds an HTML unordered list from an array of strings or Enumerables</li>
+<li>uls - Builds one or more HTML unordered lists from an array of arrays of strings or Enumerables (sub-arrays can be a mix of both)</li>
+<li>li - Returns an LI item</li>
+<li>lis - Returns a string of LI items</li>
+</ul>
+
+<h2>List Examples</h2>
+
+<pre class="code ruby"><code>ul(['a','b','c']) =&gt;
+&lt;ul&gt;&lt;li&gt;a&lt;/li&gt;&lt;li&gt;b&lt;/li&gt;&lt;li&gt;c&lt;/li&gt;&lt;/ul&gt;
+
+uls(['a','b','c'],['d','e','f'],[1,2,3]) =&gt;
+&lt;ul&gt;&lt;li&gt;a&lt;/li&gt;&lt;li&gt;b&lt;/li&gt;&lt;li&gt;c&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;d&lt;/li&gt;&lt;li&gt;e&lt;/li&gt;&lt;li&gt;f&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;1&lt;/li&gt;&lt;li&gt;2&lt;/li&gt;&lt;li&gt;3&lt;/li&gt;&lt;/ul&gt;
+</code></pre>
+
+<h2>Misc Methods</h2>
+
+<ul>
+<li>comment - Return the text parameter wrapped in an HTML comment</li>
+<li>wrap - Return the text parameter wrapped in a tag pair</li>
+</ul>
+
+<h2>Misc Examples</h2>
+
+<pre class="code ruby"><code>comment('the following comes from') =&gt;
+&lt;!-- the following comes from --&gt;
+
+wrap('foo', 'bar') =&gt;
+&lt;bar&gt;foo&lt;/bar&gt;
+</code></pre>
+
+<h2>Changes</h2>
+
+<ul>
+<li>2012-03-17 1.2.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.</li>
+<li>1.1.0 add files for lists, misc, tables</li>
+<li>1.0.6 add to gemcutter</li>
+<li>1.0.5 comment &amp; wrap</li>
+<li>1.0.4 tables</li>
+<li>1.0.0 lists</li>
+</ul>
+
+<h2>License</h2>
+
+<p>You may choose any of these open source licenses:</p>
+
+<ul>
+<li>Apache License</li>
+<li>BSD License</li>
+<li>CreativeCommons License, Non-commercial Share Alike</li>
+<li>GNU General Public License Version 2 (GPL 2)</li>
+<li>GNU Lesser General Public License (LGPL)</li>
+<li>MIT License</li>
+<li>Perl Artistic License</li>
+<li>Ruby License</li>
+</ul>
+
+<p>The software is provided &quot;as is&quot;, without warranty of any kind, 
+express or implied, including but not limited to the warranties of 
+merchantability, fitness for a particular purpose and noninfringement. </p>
+
+<p>In no event shall the authors or copyright holders be liable for any 
+claim, damages or other liability, whether in an action of contract, 
+tort or otherwise, arising from, out of or in connection with the 
+software or the use or other dealings in the software.</p>
+
+<p>This license is for the included software that is created by SixArm;
+some of the included software may have its own licenses, copyrights, 
+authors, etc. and these do take precedence over the SixArm license.</p>
+
+<p>Copyright (c) 2005-2012 Joel Parker Henderson</p>
 </div></div>
     
     <div id="footer">
-  Generated on Sat Feb 12 16:22:07 2011 by 
+  Generated on Sun Mar 18 16:58:01 2012 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.4 (ruby-1.9.2).
+  0.7.5 (ruby-1.9.3).
 </div>
 
   </body>

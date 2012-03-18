@@ -2,26 +2,29 @@
 require 'minitest/autorun'
 require 'sixarm_ruby_html'
 
-class ListsTest < Test::Unit::TestCase
+describe HTML do
 
   include HTML
 
-  ITEMS=['a','b','c']
-
-  def test_li
-    assert_equal("<li>a</li>\n",li('a'))
+  before do
+    ITEM ||= 'a'
+    ITEMS ||= ['a','b','c']
   end
 
-  def test_lis
-    assert_equal("<li>a</li>\n<li>b</li>\n<li>c</li>\n",lis(ITEMS))
+  it "#li" do
+    li(ITEM).must_equal "<li>a</li>\n"
   end
 
-  def test_ul
-    assert_equal("<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n</ul>\n",ul(ITEMS))
+  it "#lis" do
+    lis(ITEMS).must_equal "<li>a</li>\n<li>b</li>\n<li>c</li>\n"
   end
 
-  def test_uls
-    assert_equal("<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n</ul>\n<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n</ul>\n",uls([ITEMS,ITEMS]))
+  it "#ul" do
+    ul(ITEMS).must_equal "<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n</ul>\n"
+  end
+
+  it "#uls" do
+    uls([ITEMS,ITEMS]).must_equal "<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n</ul>\n<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n</ul>\n"
   end
 
 end
