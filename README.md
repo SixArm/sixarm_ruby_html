@@ -121,12 +121,3 @@ To install with high security:
 
     wrap('foo', 'bar') =>
     <bar>foo</bar>
-
-## Changes
-
-* 2012-03-17 1.2.0 Upgrade for Ruby 1.9.3, minitest/spec, and improved docs.
-* 1.1.0 add files for lists, misc, tables
-* 1.0.6 add to gemcutter
-* 1.0.5 comment & wrap
-* 1.0.4 tables
-* 1.0.0 lists
