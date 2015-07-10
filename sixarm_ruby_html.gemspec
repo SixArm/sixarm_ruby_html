@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_html"
   s.summary           = "SixArm.com » Ruby » HTML helpers"
-  s.summary           = "HTML helpers for tables, headers, rows, cells, lists, etc."
+  s.description       = "HTML helpers for tables, headers, rows, cells, lists, etc."
   s.version           = "1.2.1"
 
   s.author            = "SixArm"
@@ -37,5 +37,10 @@ Gem::Specification.new do |s|
     "test/sixarm_ruby_html_test/misc_test.rb",
     "test/sixarm_ruby_html_test/tables_test.rb",
   ]
+
+  s.add_development_dependency('minitest', '>= 5.7.0', '< 6')
+  s.add_development_dependency('rake', '> 10.4.2', '< 11')
+  s.add_development_dependency('simplecov', '>= 0.10.0', '< 2')
+  s.add_development_dependency('coveralls', '>= 0.8.2', '< 2')
 
 end
