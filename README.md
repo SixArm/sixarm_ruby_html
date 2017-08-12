@@ -1,4 +1,4 @@
-SixArm.com → Ruby → <br> HTML utility methods to generate lists, tables, etc.
+# SixArm.com → Ruby → <br> HTML utility methods to generate lists, tables, etc.
                    
 * Doc: <http://sixarm.com/sixarm_ruby_html/doc>
 * Gem: <http://rubygems.org/gems/sixarm_ruby_html>
