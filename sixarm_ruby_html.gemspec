@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_html"
-  s.summary           = "SixArm.com » Ruby » HTML helpers"
+  s.summary           = "SixArm.com → Ruby → HTML helpers"
   s.description       = "HTML helpers for tables, headers, rows, cells, lists, etc."
   s.version           = "1.2.1"
 
